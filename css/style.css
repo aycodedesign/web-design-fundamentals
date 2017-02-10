@@ -1,5 +1,5 @@
 body {
-    background-color: #308D99;
+    background-color: #1043B2;
 }
 
 .container {
@@ -7,9 +7,28 @@ body {
     border: 1px solid #000000;
     padding: 20px;
     margin: 0 auto 0 auto;
+    text-align: center;
 }
 
+/*.main-content {*/
+  /*background-color: red;*/
+/*}*/
 
+/* clearfix, footer issue*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+h1, h2 {
+  font-family: 'Lobster', cursive;
+}
 /*for main nav*/
 
 ul {
@@ -37,18 +56,27 @@ li a {
 }
 
 .red-box {
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    padding: 10px;
+    width: 50%;
+    border: 10px;
+    /*height: 200px;*/
+    background-color: #ffc644;
+    /*padding: 10px;*/
     text-align: center;
+    float: left;
 }
 
 .blue-box {
-    width: 200px;
-    height: 200px;
-    background-color: blue;
-    padding: 10px;
-    margin: 50px 0 0 0;
+    width: 50%;
+    /*height: 200px;*/
+    background-color: #447fff;
+    /*padding: 10px;*/
+    margin:0 0 0 0;
     text-align: center;
+    float: right;
+}
+
+footer {
+    border-top: 1px solid #ffffff;
+    /*clear: both;*/
+    margin-top: 15px;
 }
