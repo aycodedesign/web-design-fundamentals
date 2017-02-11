@@ -10,6 +10,30 @@ body {
     text-align: center;
 }
 
+header {
+  /*background-color: #ff6664;*/
+  /*text-transform: uppercase;*/
+  /*display: flex;*/
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  color: #ffffff;
+  text-shadow: 10px 10px 0 rgba(0, 0, 0, 2)
+}
+
+/*cool effect for h1 font*/
+.jump span {
+  display: inline-block;
+  transition: transform 1.5s;
+  cursor: url('http://csscursor.info/source/santahand.png'), default;
+}
+
+.jump span:hover {
+  /*color: #000000*/
+  transform: translateY(-30px) rotate(360deg) scale(1.5);
+
+}
+
 /*.main-content {*/
   /*background-color: red;*/
 /*}*/
@@ -40,7 +64,7 @@ ul {
     font: normal 100%, helvetica, sans-serif;
     font-size: 25px;
     text-align: center;
-}
+    }
 
 li {
     display: inline;
@@ -48,15 +72,15 @@ li {
 
 li a {
     text-decoration: none;
-    background-color: #FFA62F;
-    color: #000000;
+    background-color: #246A49;
+    color: #ffffff;
     padding: .2em 1em;
     border-right: 10px solid #FFFFFF;
     border-left: 10px solid #FFFFFF;
 }
 
 .red-box {
-    width: 50%;
+    width: 48%;
     border: 10px;
     /*height: 200px;*/
     background-color: #ffc644;
@@ -66,17 +90,26 @@ li a {
 }
 
 .blue-box {
-    width: 50%;
+    width: 48%;
     /*height: 200px;*/
     background-color: #447fff;
     /*padding: 10px;*/
-    margin:0 0 0 0;
+    margin: 0 0 0 0;
     text-align: center;
     float: right;
+}
+
+.video-box{
+  width: auto;
+  height:300px;
+  background-color: #fc4e4e;
+  margin: 30px 0 0 0;
+  text-align: center;
+  font-size: 50px;
 }
 
 footer {
     border-top: 1px solid #ffffff;
     /*clear: both;*/
-    margin-top: 15px;
+    margin-top: 30px;
 }
